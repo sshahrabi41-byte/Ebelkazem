@@ -1,141 +1,56 @@
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>وب‌سایت من</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-body {
-    font-family: Tahoma, Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    direction: rtl;
-}
+    <header class="header">
+        <img src="Header.png" alt="هدر سایت">
+    </header>
 
-/* Header */
-.header {
-    width: 100%;
-    height: 250px;
-    overflow: hidden;
-}
+    <nav class="navbar">
+        <a href="#">صفحه اصلی</a>
+        <a href="#">درباره ما</a>
+        <a href="#">خدمات</a>
+        <a href="#">ارتباط با ما</a>
+    </nav>
 
-.header img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+    <main class="container">
 
-/* Navigation */
-.navbar {
-    background-color: #222;
-    display: flex;
-    justify-content: center;
-    gap: 35px;
-    padding: 18px;
-}
+        <section class="content">
 
-.navbar a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-}
+            <img src="Logo.png" alt="لوگو سایت" class="logo">
 
-.navbar a:hover {
-    color: #00bcd4;
-}
+            <h1>به وب‌سایت من خوش آمدید</h1>
 
-/* Main */
-.container {
-    width: 90%;
-    max-width: 1100px;
-    margin: 40px auto;
-}
+            <p>
+                این وب‌سایت با استفاده از HTML و CSS طراحی شده است.
+                هدف از ساخت آن، معرفی مطالب و ارائه اطلاعات است.
+            </p>
 
-.content {
-    background-color: white;
-    text-align: center;
-    padding: 40px 20px;
-    border-radius: 12px;
-    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
-}
+            <h2>گالری تصاویر</h2>
 
-.logo {
-    width: 130px;
-    margin-bottom: 20px;
-}
+            <div class="gallery">
+                <img src="image1.jpg" alt="تصویر اول">
+                <img src="image2.jpg" alt="تصویر دوم">
+                <img src="image3.jpg" alt="تصویر سوم">
+                <img src="image4.jpg" alt="تصویر چهارم">
+            </div>
 
-h1 {
-    margin-bottom: 20px;
-}
+            <a href="#" class="button">اطلاعات بیشتر</a>
 
-p {
-    line-height: 2;
-    margin-bottom: 20px;
-}
+        </section>
 
-/* Gallery */
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    margin: 30px 0;
-}
+    </main>
 
-.gallery img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 12px;
-    transition: 0.3s;
-}
+    <footer>
+        <p>تمام حقوق محفوظ است © 2026</p>
+    </footer>
 
-.gallery img:hover {
-    transform: scale(1.03);
-}
-
-/* Button */
-.button {
-    display: inline-block;
-    background-color: #007bff;
-    color: white;
-    padding: 12px 25px;
-    text-decoration: none;
-    border-radius: 6px;
-}
-
-.button:hover {
-    background-color: #0056b3;
-}
-
-/* Footer */
-footer {
-    background-color: #222;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 50px;
-}
-
-/* Mobile */
-@media (max-width: 600px) {
-    .header {
-        height: 150px;
-    }
-
-    .navbar {
-        flex-wrap: wrap;
-        gap: 15px;
-    }
-
-    .gallery {
-        grid-template-columns: 1fr;
-    }
-
-    .gallery img {
-        height: 200px;
-    }
-
-    h1 {
-        font-size: 22px;
-    }
-}
+</body>
+</html>
